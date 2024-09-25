@@ -1,0 +1,11 @@
+# even if our images are accessible by anyone no one can access and do anything becz it is immutable
+# even if we want to find anything inside the backend we do access by debug pod
+kind: Pod
+apiVersion: v1
+metadata:
+  name: debug
+  namespace: expense
+spec:
+  containers:
+  - name: debug
+    image: bhavya458/expence:debug
