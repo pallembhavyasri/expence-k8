@@ -39,13 +39,14 @@ spec:
       containers:
       - name: backend
         image: bhavya458/expence:backend
-        # resources:
-        #   requests:
-        #     cpu: "100m"
-        #     memory: "128Mi"
-        #   limits:
-        #     cpu: "150m"
-        #     memory: "256Mi"
+        # resource definition: 
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "150m"
+            memory: "256Mi"
         # livenessProbe:
         #   httpGet:
         #     path: /health
