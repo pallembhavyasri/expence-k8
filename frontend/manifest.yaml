@@ -120,13 +120,14 @@ spec:
       containers:
       - name: frontend
         image: bhavya458/expence:frontend
-        # resources:
-        #   requests:
-        #     cpu: "100m"
-        #     memory: "128Mi"
-        #   limits:
-        #     cpu: "150m"
-        #     memory: "256Mi"
+        # resource definition: 
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "150m"
+            memory: "256Mi"
         # volumeMounts:
         # - name: nginx-conf
         #   mountPath: /etc/nginx/nginx.conf
